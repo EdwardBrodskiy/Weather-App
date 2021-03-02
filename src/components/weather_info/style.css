@@ -1,0 +1,8 @@
+.weatherInfo {
+    width : 100%;
+}
+
+.weatherInfo h2 {
+  text-align: right;
+  margin: 5%
+}
