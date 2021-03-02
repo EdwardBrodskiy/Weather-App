@@ -3,7 +3,9 @@ html, body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background: linear-gradient(165deg, rgba(73,9,121,1) 23%, rgba(0,212,255,1) 100%);
+  background-repeat: no-repeat;
+  background: rgb(73,9,121);
+  background: linear-gradient(160deg, rgba(73,9,121,1) 23%, rgba(114,137,218,1) 100%);
 	font-family: 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
 	color: white;
@@ -18,4 +20,8 @@ html, body {
 #app {
 	height: 100%;
 	
+}
+
+main {
+  margin: 5%
 }

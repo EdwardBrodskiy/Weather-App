@@ -8,13 +8,13 @@ const Header = () => (
     <WeatherInfo />
     <nav>
       <Link activeClassName={style.active} href='/'>
-        Home
+        Forecast
       </Link>
-      <Link activeClassName={style.active} href='/profile'>
-        Me
+      <Link activeClassName={style.active} href='/hourly'>
+        Hourly
       </Link>
-      <Link activeClassName={style.active} href='/profile/john'>
-        John
+      <Link activeClassName={style.active} href='/more-info'>
+        More Info
       </Link>
     </nav>
   </header>

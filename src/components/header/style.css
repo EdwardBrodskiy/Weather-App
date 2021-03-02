@@ -4,17 +4,23 @@
 
 }
 
+
 .header nav {
-  background: #673AB7;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background: #2c2f33;
+	box-shadow: 0 0 10px #2c2f33;
 	font-size: 100%;
 	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 2px solid #7289da;
 	
 }
 
 .header nav a {
+  width: stretch;
 	height: 2em;
-	line-height: 2em;
+  line-height: 2em;
+  font-size: 1.5rem;
 	padding: 0 15px;
 	min-width: 50px;
 	text-align: center;
@@ -26,9 +32,9 @@
 
 .header nav a:hover,
 .header nav a:active {
-	background: rgba(0,0,0,0.2);
+	background: #7289da;
 }
 
 .header nav a.active {
-	background: rgba(0,0,0,0.4);
+	background: #7289da;
 }

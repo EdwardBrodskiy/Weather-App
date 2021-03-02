@@ -1,0 +1,13 @@
+.forecast {
+  font-size: 2rem;
+}
+
+.forecast ul {
+  list-style-type: none;
+
+  padding: 0;
+}
+
+.forecast  hr {
+  border: 1px solid #ffffff;
+}

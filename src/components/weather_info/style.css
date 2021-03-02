@@ -1,8 +1,14 @@
-.weatherInfo {
-    width : 100%;
-}
+
 
 .weatherInfo h2 {
+  font-size: 2rem;
   text-align: right;
-  margin: 5%
+  padding: 5%;
+  margin: 0;
+}
+
+.weatherInfo h1 {
+  font-size: 28vw;
+  margin:0;
+  margin-bottom: 2rem;
 }
