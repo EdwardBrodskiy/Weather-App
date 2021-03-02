@@ -1,27 +1,27 @@
-html, body {
-	height: 100%;
-	width: 100%;
-	padding: 0;
-	margin: 0;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   background-repeat: no-repeat;
-  background: rgb(73,9,121);
-  background: linear-gradient(160deg, rgba(73,9,121,1) 23%, rgba(114,137,218,1) 100%);
-	font-family: 'Helvetica Neue', arial, sans-serif;
-	font-weight: 400;
-	color: white;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  background: rgb(73, 9, 121);
+  background: linear-gradient(160deg, rgba(73, 9, 121, 1) 23%, rgba(114, 137, 218, 1) 100%);
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  font-weight: 400;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #app {
-	height: 100%;
-	
+  height: 100%;
 }
 
 main {
-  margin: 5%
+  margin: 5%;
 }

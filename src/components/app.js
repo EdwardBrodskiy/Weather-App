@@ -18,7 +18,6 @@ const App = () => (
         <MoreInfo path='/more-info' />
       </Router>
     </main>
-
   </div>
 )
 

@@ -1,40 +1,37 @@
 .header {
-	width: 100%;
-	padding: 0;
-
+  width: 100%;
+  padding: 0;
 }
-
 
 .header nav {
   background: #2c2f33;
-	box-shadow: 0 0 10px #2c2f33;
-	font-size: 100%;
-	display: flex;
+  box-shadow: 0 0 10px #2c2f33;
+  font-size: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   border-bottom: 2px solid #7289da;
-	
 }
 
 .header nav a {
   width: stretch;
-	height: 2em;
+  height: 2em;
   line-height: 2em;
   font-size: 1.5rem;
-	padding: 0 15px;
-	min-width: 50px;
-	text-align: center;
-	background: rgba(255,255,255,0);
-	text-decoration: none;
-	color: #FFF;
-	will-change: background-color;
+  padding: 0 15px;
+  min-width: 50px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  color: #fff;
+  will-change: background-color;
 }
 
 .header nav a:hover,
 .header nav a:active {
-	background: #7289da;
+  background: #7289da;
 }
 
 .header nav a.active {
-	background: #7289da;
+  background: #7289da;
 }
