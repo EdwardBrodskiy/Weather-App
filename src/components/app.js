@@ -1,5 +1,7 @@
 import { h } from 'preact'
+import { useState, useEffect } from 'preact/compat'
 import { Router } from 'preact-router'
+import { apiKey } from '../config.json'
 
 import Header from './header'
 
@@ -8,17 +10,41 @@ import Forecast from '../routes/forecast'
 import Hourly from '../routes/hourly'
 import MoreInfo from '../routes/more_info'
 
-const App = () => (
-  <div id='app'>
-    <Header />
-    <main>
-      <Router>
-        <Forecast path='/' />
-        <Hourly path='/hourly' />
-        <MoreInfo path='/more-info' />
-      </Router>
-    </main>
-  </div>
-)
+const App = () => {
+  const [error, setError] = useState({})
+  const [isLoaded, setIsLoaded] = useState(false)
+  const [data, setData] = useState([])
 
+  useEffect(() => {
+    (async () => {
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=london&appid=${apiKey}`)
+      if (!response.ok) {
+        throw Error(response.statusText)
+      }
+      const result = await response.json()
+      setIsLoaded(true)
+      setData(result)
+    })().catch(err => {
+      setError(err)
+    })
+  }, [])
+
+  if (error.message) {
+    return <h1>Error: {error.message}</h1>
+  } else if (!isLoaded) {
+    return <h1>Loading</h1>
+  }
+  return (
+    <div id='app'>
+      <Header weather={data.list[0]} />
+      <main>
+        <Router>
+          <Forecast path='/' />
+          <Hourly path='/hourly' />
+          <MoreInfo path='/more-info' />
+        </Router>
+      </main>
+    </div>
+  )
+}
 export default App
