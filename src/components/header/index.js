@@ -5,7 +5,7 @@ import { WeatherInfo } from '../weather_info'
 
 const Header = (props) => (
   <header class={style.header}>
-    <WeatherInfo weather={props.weather} />
+    <WeatherInfo data={props.data} />
     <nav>
       <Link activeClassName={style.active} href='/'>
         Forecast

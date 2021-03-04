@@ -1,7 +1,7 @@
 import { h } from 'preact'
 import { useState, useEffect } from 'preact/compat'
 import { Router } from 'preact-router'
-import { apiKey } from '../config.json'
+import { apiEndPoint } from '../config.json'
 
 import Header from './header'
 
@@ -17,7 +17,7 @@ const App = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=london&appid=${apiKey}`)
+      const response = await fetch(apiEndPoint)
       if (!response.ok) {
         throw Error(response.statusText)
       }
@@ -36,7 +36,7 @@ const App = () => {
   }
   return (
     <div id='app'>
-      <Header weather={data.list[0]} />
+      <Header data={data} />
       <main>
         <Router>
           <Forecast path='/' />

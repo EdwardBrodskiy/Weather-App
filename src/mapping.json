@@ -1,0 +1,8 @@
+{
+  "Thunderstorm": "wi-lightning",
+  "Drizzle": "wi-rain-mix",
+  "Rain": "wi-rain",
+  "Snow": "wi-snowflake-cold",
+  "Clear": "wi-day-sunny",
+  "Clouds": "wi-cloudy"
+}
