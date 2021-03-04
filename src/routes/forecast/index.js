@@ -1,19 +1,27 @@
 import { h } from 'preact'
 import style from './style.css'
+import { Snippet } from './components/snippet'
 
-const Forecast = () => (
-  <div class={style.forecast}>
-    <ul>
-      <li>Monday Mostly Sunny ☀</li>
+const Forecast = (props) => {
+  const snippets = props.data.list.slice(1, 5).map((item, index) => (
+    <div>
+      <Snippet
+        key={index}
+        time={item.dt_txt}
+        description={item.weather[0].description}
+        state={item.weather[0].main}
+      />
       <hr />
-      <li>Tuesday Partly Cloudy &#x1F324;</li>
-      <hr />
-      <li>Wednesday Cloudy ☁</li>
-      <hr />
-      <li>Thursday Rainy 🌧</li>
-      <hr />
-    </ul>
-  </div>
-)
+    </div>
+
+  ))
+  return (
+    <div class={style.forecast}>
+      <ul>
+        {snippets}
+      </ul>
+    </div>
+  )
+}
 
 export default Forecast

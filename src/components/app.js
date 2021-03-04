@@ -39,7 +39,7 @@ const App = () => {
       <Header data={data} />
       <main>
         <Router>
-          <Forecast path='/' />
+          <Forecast path='/' data={data} />
           <Hourly path='/hourly' />
           <MoreInfo path='/more-info' />
         </Router>

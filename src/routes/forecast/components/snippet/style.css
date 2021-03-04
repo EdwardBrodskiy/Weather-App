@@ -1,0 +1,20 @@
+.snippet {
+  font-size: 7vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.snippet .text{
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.text p {
+  margin: 0;
+}
+
+.snippet i::before, .snippet i {
+  float: right;
+  font-size: 1.5em;
+}
+
