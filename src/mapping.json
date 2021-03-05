@@ -4,5 +4,8 @@
   "Rain": "wi-rain",
   "Snow": "wi-snowflake-cold",
   "Clear": "wi-day-sunny",
-  "Clouds": "wi-cloudy"
+  "Clouds": "wi-cloudy",
+  "day": {},
+  "night": {},
+  "neutral": {}
 }
