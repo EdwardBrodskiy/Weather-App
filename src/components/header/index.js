@@ -8,8 +8,8 @@ const Header = () => (
       <Link activeClassName={style.active} href='/'>
         Forecast
       </Link>
-      <Link activeClassName={style.active} href='/hourly'>
-        Hourly
+      <Link activeClassName={style.active} href='/week'>
+        Week
       </Link>
       <Link activeClassName={style.active} href='/more-info'>
         More Info

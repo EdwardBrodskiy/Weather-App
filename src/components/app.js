@@ -9,7 +9,7 @@ import { WeatherInfo } from './weather_info'
 
 // Code-splitting is automated for `routes` directory
 import Forecast from '../routes/forecast'
-import Hourly from '../routes/hourly'
+import Week from '../routes/week'
 import MoreInfo from '../routes/more_info'
 
 const App = () => {
@@ -44,7 +44,7 @@ const App = () => {
         <main>
           <Router history={createHashHistory()}>
             <Forecast path='/' data={data} />
-            <Hourly path='/hourly' />
+            <Week path='/week' />
             <MoreInfo path='/more-info' data={data} />
           </Router>
         </main>
