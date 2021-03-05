@@ -26,7 +26,7 @@ const App = () => {
       const result = await response.json()
       setIsLoaded(true)
       setData(result)
-    })().catch(err => {
+    })().catch((err) => {
       setError(err)
     })
   }, [])
@@ -49,7 +49,6 @@ const App = () => {
           </Router>
         </main>
       </div>
-
     </div>
   )
 }

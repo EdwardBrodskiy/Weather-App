@@ -11,7 +11,9 @@ export const WeatherInfo = (props) => {
   return (
     <div class={style.weatherInfo}>
       <h2>LONDON</h2>
-      <h1><i class={`wi ${icon_mapping[current_state]}`} /> {current_temp}°C</h1>
+      <h1>
+        <i class={`wi ${icon_mapping[current_state]}`} /> {current_temp}°C
+      </h1>
     </div>
   )
 }

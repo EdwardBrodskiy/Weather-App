@@ -1,4 +1,3 @@
-
 .weatherInfo h2 {
   font-size: 2rem;
   text-align: right;
@@ -16,7 +15,6 @@
   margin: 0;
   padding: 0;
   fill: white;
-
 }
 @media only screen and (min-width: 1200px) {
   .weatherInfo h1 {
@@ -35,5 +33,4 @@
   .weatherInfo {
     margin: 1rem 1rem 2rem 1rem;
   }
-  
 }

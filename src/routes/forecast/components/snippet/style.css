@@ -4,7 +4,7 @@
   flex-direction: row;
 }
 
-.snippet .text{
+.snippet .text {
   flex-direction: column;
   margin-right: auto;
 }
@@ -13,8 +13,8 @@
   margin: 0;
 }
 
-.snippet i::before, .snippet i {
+.snippet i::before,
+.snippet i {
   float: right;
   font-size: 1.5em;
 }
-
