@@ -45,7 +45,7 @@ const App = () => {
           <Router history={createHashHistory()}>
             <Forecast path='/' data={data} />
             <Hourly path='/hourly' />
-            <MoreInfo path='/more-info' />
+            <MoreInfo path='/more-info' data={data} />
           </Router>
         </main>
       </div>

@@ -1,0 +1,15 @@
+.wind {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  margin: 0px;
+}
+
+.wind i::before,
+.wind i {
+  float: right;
+  font-size: 2em;
+}
