@@ -1,4 +1,5 @@
 import { h } from 'preact'
+import capitalize from 'capitalize'
 import style from './style.css'
 import { Snippet } from './components/snippet'
 import { Wind } from './components/wind'
@@ -9,7 +10,7 @@ const MoreInfo = (props) => {
   return (
     <div class={style.moreInfo}>
       <ul>
-        <h3>{current.weather[0].description}</h3>
+        <h3>{capitalize.words(current.weather[0].description)}</h3>
         <Snippet title='Feels Like' content={`${Math.round(current.main.feels_like - 273.15)}°C`} />
         <hr />
         <Snippet title='Humidity' content={`${current.main.humidity}%`} />
