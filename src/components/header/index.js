@@ -1,11 +1,9 @@
 import { h } from 'preact'
 import { Link } from 'preact-router/match'
 import style from './style.css'
-import { WeatherInfo } from '../weather_info'
 
-const Header = (props) => (
+const Header = () => (
   <header class={style.header}>
-    <WeatherInfo data={props.data} />
     <nav>
       <Link activeClassName={style.active} href='/'>
         Forecast

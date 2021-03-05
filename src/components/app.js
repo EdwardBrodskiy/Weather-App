@@ -4,6 +4,7 @@ import { Router } from 'preact-router'
 import { apiEndPoint } from '../config.json'
 
 import Header from './header'
+import { WeatherInfo } from './weather_info'
 
 // Code-splitting is automated for `routes` directory
 import Forecast from '../routes/forecast'
@@ -36,14 +37,18 @@ const App = () => {
   }
   return (
     <div id='app'>
-      <Header data={data} />
-      <main>
-        <Router>
-          <Forecast path='/' data={data} />
-          <Hourly path='/hourly' />
-          <MoreInfo path='/more-info' />
-        </Router>
-      </main>
+      <WeatherInfo data={data} />
+      <div id='otherInfo'>
+        <Header />
+        <main>
+          <Router>
+            <Forecast path='/' data={data} />
+            <Hourly path='/hourly' />
+            <MoreInfo path='/more-info' />
+          </Router>
+        </main>
+      </div>
+
     </div>
   )
 }

@@ -5,7 +5,7 @@
 
 .header nav {
   background: #2c2f33;
-  box-shadow: 0 0 10px #2c2f33;
+  box-shadow: 0 0 1em #2c2f33;
   font-size: 100%;
   display: flex;
   flex-direction: row;
@@ -34,4 +34,13 @@
 
 .header nav a.active {
   background: #7289da;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .header nav a {
+    height: 2em;
+    line-height: 2em;
+    font-size: 2rem;
+  }
 }

@@ -1,5 +1,5 @@
 .snippet {
-  font-size: 7vw;
+  font-size: 1em;
   display: flex;
   flex-direction: row;
 }
