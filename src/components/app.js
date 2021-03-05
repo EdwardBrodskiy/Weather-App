@@ -1,6 +1,7 @@
 import { h } from 'preact'
 import { useState, useEffect } from 'preact/compat'
 import { Router } from 'preact-router'
+import { createHashHistory } from 'history'
 import { apiEndPoint } from '../config.json'
 
 import Header from './header'
@@ -41,7 +42,7 @@ const App = () => {
       <div id='otherInfo'>
         <Header />
         <main>
-          <Router>
+          <Router history={createHashHistory()}>
             <Forecast path='/' data={data} />
             <Hourly path='/hourly' />
             <MoreInfo path='/more-info' />
