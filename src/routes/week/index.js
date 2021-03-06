@@ -16,7 +16,7 @@ const Week = (props) => {
   ))
   return (
     <div class={style.week}>
-      <p>TODO</p>
+      <ul>{snippets}</ul>
     </div>
   )
 }
