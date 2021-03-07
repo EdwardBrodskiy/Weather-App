@@ -3,7 +3,11 @@ import style from './style.css'
 import { Snippet } from './components/snippet'
 
 const Week = (props) => {
-  const snippets = props.data.list.slice(1, 5).map((item, index) => (
+  const dailyData = props.data.list.filter(reading => {
+    return reading.dt_txt.includes("12:00:00")
+  })
+
+  const snippets = dailyData.map((item, index) => (
     <div key={index}>
       <Snippet
         time={item.dt_txt}
