@@ -1,4 +1,5 @@
 {
+  "homepage": "https://edwardbrodskiy.github.io/Weather-App",
   "private": true,
   "name": "weather-app",
   "version": "0.0.0",
@@ -10,7 +11,8 @@
     "lint": "eslint src",
     "test": "jest",
     "pretty": "prettier --write \"./**/*.{js,jsx,json,css}\"",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build:gh": "GITHUB_PAGES=Weather-App preact build && dot-json ./build/manifest.json start_url \"/Weather-App/\""
   },
   "eslintConfig": {
     "extends": "preact",
@@ -19,6 +21,7 @@
     ]
   },
   "devDependencies": {
+    "dot-json": "^1.2.2",
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",

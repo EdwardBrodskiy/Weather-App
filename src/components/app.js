@@ -3,6 +3,7 @@ import { useState, useEffect } from 'preact/compat'
 import { Router } from 'preact-router'
 import { createHashHistory } from 'history'
 import { apiEndPoint } from '../config.json'
+import baseroute from '../baseroute'
 
 import Header from './header'
 import { WeatherInfo } from './weather_info'
@@ -43,9 +44,9 @@ const App = () => {
         <Header />
         <main>
           <Router history={createHashHistory()}>
-            <Forecast path='/' data={data} />
-            <Week path='/week' />
-            <MoreInfo path='/more-info' data={data} />
+            <Forecast path={`${baseroute}/`} data={data} />
+            <Week path={`${baseroute}/week`} />
+            <MoreInfo path={`${baseroute}/more-info`} data={data} />
           </Router>
         </main>
       </div>
