@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"3fqN":function(e,n,o){"use strict";o.r(n);var s=o("hosL"),t=o("OzuQ"),u=o.n(t);n.default=function(){return Object(s.h)("div",{class:u.a.week},"TODO")}},OzuQ:function(e){e.exports={week:"week__30P4Z"}}}]);
+//# sourceMappingURL=route-week.chunk.df9f9.js.map
