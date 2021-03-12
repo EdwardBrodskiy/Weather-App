@@ -2,7 +2,7 @@ import { h } from 'preact'
 import { useState, useEffect } from 'preact/compat'
 import { Router } from 'preact-router'
 import { createHashHistory } from 'history'
-import { apiURL, appId } from '../config.json'
+import { Days_3Hour } from '../config.json'
 
 import Header from './header'
 import { WeatherInfo } from './weather_info'
@@ -60,7 +60,7 @@ const App = () => {
 }
 
 const get_weather = async (lat, lon) => {
-  const url = `${apiURL}lat=${lat}&lon=${lon}&appid=${appId}`
+  const url = `${Days_3Hour.apiURL}lat=${lat}&lon=${lon}&appid=${Days_3Hour.appId}`
   const response = await fetch(url)
   if (!response.ok) {
     throw Error(response.statusText)
@@ -72,5 +72,3 @@ const get_weather = async (lat, lon) => {
 
 export default App
 
-// https://api.openweathermap.org/data/2.5/forecast?lat=51.4809597&lon=-0.11796979999999999&appid=f3d0541df7d71acb69f6716e4de3bcc2
-//https://api.openweathermap.org/data/2.5/forecast?lat=52.520007&lon=13.404954&appid=f3d0541df7d71acb69f6716e4de3bcc2

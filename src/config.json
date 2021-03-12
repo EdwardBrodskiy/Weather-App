@@ -1,4 +1,10 @@
 {
-  "apiURL": "https://api.openweathermap.org/data/2.5/forecast?",
-  "appId": "f3d0541df7d71acb69f6716e4de3bcc2"
+  "Days_3Hour": {
+    "apiURL": "https://api.openweathermap.org/data/2.5/forecast?",
+    "appId": "f3d0541df7d71acb69f6716e4de3bcc2"
+  },
+  "One_Call": {
+    "apiURL": "url here",
+    "appId": "app ID here"
+  }
 }
