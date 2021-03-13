@@ -8,7 +8,8 @@ export const Snippet = ({ time, description, state, temp }) => {
   return (
     <div class={style.snippet}>
       <div class={style.text}>
-        <p>{Moment(time).format('dddd')} - {temp}°C</p>
+        <p class={style.day}>{Moment(time).format('dddd')}</p>
+        <p class={style.temp}>{temp}°C</p>
         <p>{capitalize(description)}</p>
       </div>
       <i class={`wi ${icon_mapping[state]}`} />

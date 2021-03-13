@@ -13,6 +13,14 @@
   margin: 0;
 }
 
+.time {
+  font-weight: bold;
+}
+
+.temp {
+  font-size: 1.3em;
+}
+
 .snippet i::before,
 .snippet i {
   float: right;
