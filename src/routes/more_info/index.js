@@ -3,6 +3,7 @@ import capitalize from 'capitalize'
 import style from './style.css'
 import { Snippet } from './components/snippet'
 import { Wind } from './components/wind'
+import { Precipitacion } from './components/precipitation'
 
 const MoreInfo = (props) => {
   const current = props.data.list[0]
@@ -14,6 +15,8 @@ const MoreInfo = (props) => {
         <Snippet title='Feels Like' content={`${Math.round(current.main.feels_like - 273.15)}°C`} />
         <hr />
         <Snippet title='Humidity' content={`${current.main.humidity}%`} />
+        <hr />
+        <Precipitacion title ='Precipitation' />
         <hr />
         <Wind direction={current.wind.deg} speed={current.wind.speed} />
       </ul>
