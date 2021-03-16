@@ -50,7 +50,7 @@ hr {
 
 @media only screen and (max-width: 1200px) {
   main {
-    margin: 5%;
+    margin: 0% 5%;
   }
 }
 
@@ -138,7 +138,10 @@ hr {
 
 @media only screen and (max-width: 1200px) {
   .weatherInfo__3IB7n {
-    margin: 1rem 1rem 2rem 1rem;
+    margin: .5rem;
+  }
+  .weatherInfo__3IB7n h2 {
+    float: right;
   }
 }
 
@@ -1995,32 +1998,67 @@ hr {
 }
 
 .snippet__3Ln0y {
-  font-size: 1em;
+  font-size: 0.8em;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-}
-
-.snippet__3Ln0y .text__3awYV {
-  -ms-flex-direction: column;
-      flex-direction: column;
-  margin-right: auto;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .text__3awYV p {
   margin: 0;
 }
 
+.time__2Dp_G {
+  font-weight: bold;
+  font-size: 1.1em;
+  height: 40px;
+}
+
 .snippet__3Ln0y i::before,
 .snippet__3Ln0y i {
-  float: right;
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 .week__30P4Z {
-  min-height: 100%;
-  width: 100%;
+  font-size: 2rem;
+}
+
+.week__30P4Z ul {
+  list-style-type: none;
+  
+  padding: 0;
+}
+
+.week__30P4Z hr {
+  border: 1px solid #ffffff;
+}
+
+.snippet__25thh {
+  font-size: 0.8em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.text__2Gz3k p {
+  margin: 0;
+}
+
+.day__31RYt {
+  font-weight: bold;
+  font-size: 1.1em;
+  height: 40px;
+}
+
+.snippet__25thh i::before,
+.snippet__25thh i {
+  font-size: 1.6em;
 }
 
 .moreInfo__ywXaQ {
@@ -5133,4 +5171,4 @@ p {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.1aced.css.map*/
+/*# sourceMappingURL=ssr-bundle.950cf.css.map*/
