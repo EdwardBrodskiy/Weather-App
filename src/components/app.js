@@ -52,7 +52,7 @@ const App = () => {
         <main>
           <Router history={createHashHistory()}>
             <Forecast path={`${baseroute}/`} data={data} />
-            <Week path={`${baseroute}/week`} />
+            <Week path={`${baseroute}/week`} data={data} />
             <MoreInfo path={`${baseroute}/more-info`} data={data} />
           </Router>
         </main>
