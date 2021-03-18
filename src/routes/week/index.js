@@ -4,8 +4,6 @@ import { Snippet } from './components/snippet'
 
 const Week = (props) => {
 
-  //starting new branch
-
   // filter the data for midday readings for each day
   const dailyData = props.data.list.filter(reading => {
     return reading.dt_txt.includes("12:00:00")

@@ -1,5 +1,7 @@
 .forecast {
   font-size: 2rem;
+  overflow-y: auto;
+  height: 450px;
 }
 
 .forecast ul {

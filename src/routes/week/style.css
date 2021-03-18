@@ -1,10 +1,12 @@
 .week {
   font-size: 2rem;
+  overflow-y: auto;
+  height: 450px;
 }
 
 .week ul {
   list-style-type: none;
-  
+
   padding: 0;
 }
 
