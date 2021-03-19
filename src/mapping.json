@@ -1,4 +1,10 @@
 {
+"Thunderstorm": "wi-lightning",
+"Drizzle": "wi-rain-mix",
+"Rain": "wi-rain",
+"Snow": "wi-snowflake-cold",
+"Clear": "wi-day-sunny",
+"Clouds": "wi-cloudy",
 "day": {
   "thunderstorm with light rain": "wi-day-storm-showers",
   "thunderstorm with rain": "wi-day-sleet-storm",
