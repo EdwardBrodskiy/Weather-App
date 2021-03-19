@@ -1,4 +1,13 @@
 .week {
-  min-height: 100%;
-  width: 100%;
+  font-size: 2rem;
+}
+
+.week ul {
+  list-style-type: none;
+  
+  padding: 0;
+}
+
+.week hr {
+  border: 1px solid #ffffff;
 }
