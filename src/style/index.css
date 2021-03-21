@@ -1,3 +1,10 @@
+:root {
+  animation: ease 1s;
+  --background-color: linear-gradient(160deg, rgba(73, 9, 121, 1) 23%, rgba(114, 137, 218, 1) 100%);
+  --text-color: white;
+}
+
+
 html,
 body {
   height: 100%;
@@ -6,10 +13,10 @@ body {
   margin: 0;
   overflow-y: overlay;
   background: rgba(114, 137, 218, 1);
-  background: linear-gradient(160deg, rgba(73, 9, 121, 1) 23%, rgba(114, 137, 218, 1) 100%);
+  background: var(--background-color);
   font-family: 'Helvetica Neue', arial, sans-serif;
   font-weight: 400;
-  color: white;
+  color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

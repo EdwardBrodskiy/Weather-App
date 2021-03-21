@@ -1,0 +1,12 @@
+.themer {
+  position: absolute;
+  top: 4em;
+  right: 0.5em;
+}
+
+.themer button {
+  background-color: #23272a;
+  color: white;
+  border-radius: 1em;
+  font-size: large;
+}
