@@ -1,7 +1,11 @@
 .forecast {
   font-size: 2rem;
   overflow-y: auto;
-  height: 450px;
+  height: 330px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .forecast ul {
