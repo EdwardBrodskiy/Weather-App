@@ -2,11 +2,19 @@
   position: absolute;
   top: 4em;
   right: 0.5em;
+  width: 100px;
 }
 
 .themer button {
   background-color: #23272a;
   color: white;
   border-radius: 1em;
-  font-size: large;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 0;
+}
+
+.themer button:focus {
+  border: 0;
+  outline: 0;
 }

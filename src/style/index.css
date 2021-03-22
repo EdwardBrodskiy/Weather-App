@@ -1,18 +1,23 @@
 :root {
-  animation: ease 1s;
   --background-color: linear-gradient(160deg, rgba(73, 9, 121, 1) 23%, rgba(114, 137, 218, 1) 100%);
-  --text-color: white;
+  --text-color: #ffffff;
+  --alt-text-color: #ffffff;
+  --primary: #7289da;
+  --secondary: #99aab5;
+  --background-0: #23272a;
+  --background-1: #2c2f33;
 }
 
 
 html,
 body {
+  will-change: auto;
+  transition: all 1s ease-in-out;
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
   overflow-y: overlay;
-  background: rgba(114, 137, 218, 1);
   background: var(--background-color);
   font-family: 'Helvetica Neue', arial, sans-serif;
   font-weight: 400;
@@ -36,7 +41,7 @@ ul {
 }
 
 hr {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--text-color);
 }
 
 

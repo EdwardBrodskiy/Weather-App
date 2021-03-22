@@ -9,5 +9,5 @@
 }
 
 .week hr {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--text-color);
 }
