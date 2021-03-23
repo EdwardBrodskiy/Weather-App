@@ -13,7 +13,6 @@ import { WeatherInfo } from './weather_info'
 import Forecast from '../routes/forecast'
 import Week from '../routes/week'
 import MoreInfo from '../routes/more_info'
-import Themer from './themer'
 
 const App = () => {
   const [error, setError] = useState({})
@@ -48,7 +47,6 @@ const App = () => {
   }
   return (
     <div id='app'>
-      <Themer />
       <WeatherInfo data={data} />
       <div id='otherInfo'>
         <Header />

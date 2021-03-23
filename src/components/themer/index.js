@@ -1,5 +1,6 @@
 import { h } from 'preact'
 import { useState } from 'preact/compat'
+import '../../style/weather-icons.min.css'
 import style from './style.css'
 
 const themes = {
@@ -23,16 +24,18 @@ const themes = {
   }
 }
 
-const Themer = () => {
+export const Themer = () => {
   const [theme, setTheme] = useState('default')
 
   return (
     <div class={style.themer}>
-      <button onClick={() => {
+      <button onClick={event => {
         const new_theme = theme === 'default' ? 'high_contrast' : 'default'
+        event.target.style.setProperty('background', themes[theme]['--background-color'])
+        event.target.style.setProperty('color', themes[theme]['--text-color'])
         update_style(themes[new_theme])
         setTheme(new_theme)
-      }}>High Contrast</button>
+      }}>{theme === 'default' ? 'High Contrast' : 'Default'} <i class='wi wi-moon-alt-third-quarter' /></button>
     </div>
   )
 }
@@ -42,5 +45,3 @@ const update_style = theme => {
     document.body.style.setProperty(property, theme[property])
   }
 }
-
-export default Themer
