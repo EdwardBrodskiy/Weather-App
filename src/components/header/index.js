@@ -13,7 +13,7 @@ const Header = () => (
         Week
       </Link>
       <Link activeClassName={style.active} href={`${baseroute}/more-info`}>
-        More Info
+        Details
       </Link>
     </nav>
   </header>
