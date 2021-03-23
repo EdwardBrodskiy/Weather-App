@@ -14,6 +14,7 @@ import Forecast from '../routes/forecast'
 import Week from '../routes/week'
 import MoreInfo from '../routes/more_info'
 import { Loading } from './loading'
+import { Themer } from './themer'
 
 const App = () => {
   const [error, setError] = useState({})
@@ -59,6 +60,7 @@ const App = () => {
           </Router>
         </main>
       </div>
+      <Themer />
     </div>
   )
 }
