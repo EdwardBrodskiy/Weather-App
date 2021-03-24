@@ -4,7 +4,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  overflow-y: overlay;
+  overflow: hidden;
   background: rgba(114, 137, 218, 1);
   background: linear-gradient(160deg, rgba(73, 9, 121, 1) 23%, rgba(114, 137, 218, 1) 100%);
   font-family: 'Helvetica Neue', arial, sans-serif;

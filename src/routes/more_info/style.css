@@ -2,6 +2,13 @@
   min-height: 100%;
   width: 100%;
   font-size: 2rem;
+  overflow-y: auto;
+  height: 330px;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .moreInfo h3 {
