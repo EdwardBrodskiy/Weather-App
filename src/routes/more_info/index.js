@@ -42,7 +42,7 @@ const MoreInfo = ({ data }) => {
         <hr />
         <Snippet title='Humidity' content={`${current.main.humidity}%`} />
         <hr />
-        <Precipitation title='Precipitation' content={`${pData.minutely.precipitation}`} />
+        <Precipitation title='Precipitation' value={`${pData.minutely[0].precipitation}%`} />
         <hr />
         <Wind direction={current.wind.deg} speed={current.wind.speed} />
       </ul>

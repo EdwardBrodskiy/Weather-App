@@ -7,9 +7,3 @@
 p {
     margin:0px;
 }
-
-.precipitation i::before,
-.precipitation i {
-    float:right;
-    font-size: 2em;
-}
