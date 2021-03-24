@@ -5170,5 +5170,18 @@ p {
   font-size: 2em;
 }
 
+.precipitation__1Vz9a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+}
 
-/*# sourceMappingURL=ssr-bundle.950cf.css.map*/
+p {
+    margin:0px;
+}
+
+
+/*# sourceMappingURL=ssr-bundle.85f6b.css.map*/
