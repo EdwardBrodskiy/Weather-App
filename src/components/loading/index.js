@@ -6,7 +6,6 @@ import style from './style.css'
 export const Loading = () => {
   return (
     <div class={style.loading}>
-      <h1>Logo</h1>
       <div class={style.loader}>Loading...</div>
     </div>
 
