@@ -16,7 +16,6 @@
     "thunderstorm with light drizzle": "wi-day-storm-showers",
     "thunderstorm with drizzle": "wi-day-storm-showers",
     "thunderstorm with heavy drizzle": "wi-day-storm-showers",
-
     "light intensity drizzle": "wi-day-sprinkle",
     "drizzle": "wi-day-sleet",
     "heavy intensity drizzle": "wi-day-sleet",
@@ -30,13 +29,12 @@
     "moderate rain": "wi-day-showers",
     "heavy intensity rain": "wi-day-rain",
     "very heavy rain": "wi-day-rain-wind",
-    "extreme rain":"wi-day-rain-wind",
+    "extreme rain": "wi-day-rain-wind",
     "freezing rain": "wi-day-sleet",
     "light intensity shower rain": "wi-day-rain-mix",
     "shower rain": "wi-day-showers",
     "heavy intensity shower rain": "wi-day-rain",
     "ragged shower rain": "wi-day-rain-mix",
-
     "light snow": "wi-day-snow",
     "Snow": "wi-day-snow",
     "Heavy snow": "wi-day-snow-wind",
@@ -48,7 +46,6 @@
     "Light shower snow": "wi-day-snow",
     "Shower snow": "wi-day-snow-wind",
     "Heavy shower snow": "wi-day-snow-wind",
-
     "mist": "wi-day-fog",
     "Smoke": "wi-smoke",
     "Haze": "wi-day-haze",
@@ -59,12 +56,11 @@
     "volcanic ash": "wi-volcano",
     "squalls": "wi-day-sandstorm",
     "tornado": "wi-day-tornado",
-
     "clear sky": "wi-day-sunny",
-    "few clouds: 11-25%": "wi-day-cloudy",
-    "scattered clouds: 25-50%": "wi-day-cloudy",
-    "broken clouds: 51-84%": "wi-cloud",
-    "overcast clouds: 85-100%": "wi-cloudy"
+    "few clouds": "wi-day-cloudy",
+    "scattered clouds": "wi-day-cloudy",
+    "broken clouds": "wi-cloud",
+    "overcast clouds": "wi-cloudy"
   },
   "night": {
     "thunderstorm with light rain": "wi-night-alt-storm-showers",
@@ -77,7 +73,6 @@
     "thunderstorm with light drizzle": "wi-night-alt-storm-showers",
     "thunderstorm with drizzle": "wi-night-alt-storm-showers",
     "thunderstorm with heavy drizzle": "wi-night-alt-storm-showers",
-
     "light intensity drizzle": "wi-night-alt-sprinkle",
     "drizzle": "wi-night-alt-sleet",
     "heavy intensity drizzle": "wi-night-alt-sleet",
@@ -91,13 +86,12 @@
     "moderate rain": "wi-night-alt-showers",
     "heavy intensity rain": "wi-night-alt-rain",
     "very heavy rain": "wi-night-alt-rain-wind",
-    "extreme rain":"wi-night-alt-rain-wind",
+    "extreme rain": "wi-night-alt-rain-wind",
     "freezing rain": "wi-night-alt-sleet",
     "light intensity shower rain": "wi-night-alt-rain-mix",
     "shower rain": "wi-night-alt-showers",
     "heavy intensity shower rain": "wi-night-alt-rain",
     "ragged shower rain": "wi-night-alt-rain-mix",
-
     "light snow": "wi-night-alt-snow",
     "Snow": "wi-night-alt-snow",
     "Heavy snow": "wi-night-alt-snow-wind",
@@ -109,7 +103,6 @@
     "Light shower snow": "wi-night-alt-snow",
     "Shower snow": "wi-night-alt-snow-wind",
     "Heavy shower snow": "wi-night-alt-snow-wind",
-
     "mist": "wi-night-fog",
     "Smoke": "wi-smoke",
     "Haze": "wi-day-haze",
@@ -120,12 +113,11 @@
     "volcanic ash": "wi-volcano",
     "squalls": "wi-day-sandstorm",
     "tornado": "wi-day-tornado",
-
     "clear sky": "wi-night-clear",
-    "few clouds: 11-25%": "wi-night-alt-cloudy",
-    "scattered clouds: 25-50%": "wi-night-alt-partly-cloudy",
-    "broken clouds: 51-84%": "wi-night-alt-partly-cloudy",
-    "overcast clouds: 85-100%": "wi-night-alt-cloudy-high"
+    "few clouds": "wi-night-alt-cloudy",
+    "scattered clouds": "wi-night-alt-partly-cloudy",
+    "broken clouds": "wi-night-alt-partly-cloudy",
+    "overcast clouds": "wi-night-alt-cloudy-high"
   },
   "neutral": {
     "thunderstorm with light rain": "wi-storm-showers",
@@ -138,7 +130,6 @@
     "thunderstorm with light drizzle": "wi-storm-showers",
     "thunderstorm with drizzle": "wi-storm-showers",
     "thunderstorm with heavy drizzle": "wi-storm-showers",
-
     "light intensity drizzle": "wi-sprinkle",
     "drizzle": "wi-sleet",
     "heavy intensity drizzle": "wi-sleet",
@@ -152,13 +143,12 @@
     "moderate rain": "wi-showers",
     "heavy intensity rain": "wi-rain",
     "very heavy rain": "wi-rain-wind",
-    "extreme rain":"wi-rain-wind",
+    "extreme rain": "wi-rain-wind",
     "freezing rain": "wi-sleet",
     "light intensity shower rain": "wi-rain-mix",
     "shower rain": "wi-showers",
     "heavy intensity shower rain": "wi-rain",
     "ragged shower rain": "wi-rain-mix",
-
     "light snow": "wi-snow",
     "Snow": "wi-snow",
     "Heavy snow": "wi-snow-wind",
@@ -170,7 +160,6 @@
     "Light shower snow": "wi-snow",
     "Shower snow": "wi-snow-wind",
     "Heavy shower snow": "wi-snow-wind",
-
     "mist": "wi-fog",
     "Smoke": "wi-smoke",
     "Haze": "wi-day-haze",
@@ -181,11 +170,10 @@
     "volcanic ash": "wi-volcano",
     "squalls": "wi-day-sandstorm",
     "tornado": "wi-day-tornado",
-
     "clear sky": "wi-day-sunny",
-    "few clouds: 11-25%": "wi-cloud",
-    "scattered clouds: 25-50%": "wi-cloud",
-    "broken clouds: 51-84%": "wi-cloud",
-    "overcast clouds: 85-100%": "wi-cloudy"
+    "few clouds": "wi-cloud",
+    "scattered clouds": "wi-cloud",
+    "broken clouds": "wi-cloud",
+    "overcast clouds": "wi-cloudy"
   }
 }
