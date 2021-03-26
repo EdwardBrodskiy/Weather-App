@@ -6,7 +6,6 @@ import { Snippet } from './components/snippet'
 import { Wind } from './components/wind'
 import { One_Call } from '../../config.json'
 
-
 const MoreInfo = ({ data }) => {
   const [error, setError] = useState({})
   const [isLoaded, setIsLoaded] = useState(false)
