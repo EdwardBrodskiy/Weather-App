@@ -4,7 +4,6 @@ import capitalize from 'capitalize'
 import style from './style.css'
 import { Snippet } from './components/snippet'
 import { Wind } from './components/wind'
-import { Precipitation } from './components/precipitation'
 import { One_Call } from '../../config.json'
 
 
@@ -33,7 +32,6 @@ const MoreInfo = ({ data }) => {
   } else if (!isLoaded) {
     return <h1>Loading</h1>
   }
-  console.log(pData)
   return (
     <div class={style.moreInfo}>
       <ul>
@@ -42,7 +40,10 @@ const MoreInfo = ({ data }) => {
         <hr />
         <Snippet title='Humidity' content={`${current.main.humidity}%`} />
         <hr />
-        <Precipitation title='Precipitation' value={`${pData.minutely[0].precipitation}%`} />
+        <Snippet
+          title='Precipitation'
+          content={`${Math.round(pData.minutely[0].precipitation)}%`}
+        />
         <hr />
         <Wind direction={current.wind.deg} speed={current.wind.speed} />
       </ul>
