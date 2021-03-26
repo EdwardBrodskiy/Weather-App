@@ -13,11 +13,14 @@ import { WeatherInfo } from './weather_info'
 import Forecast from '../routes/forecast'
 import Week from '../routes/week'
 import MoreInfo from '../routes/more_info'
+import { Loading } from './loading'
+import { Themer } from './themer'
 
 const App = () => {
   const [error, setError] = useState({})
   const [isLoaded, setIsLoaded] = useState(false)
   const [data, setData] = useState([])
+
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -41,7 +44,7 @@ const App = () => {
   if (error.message) {
     return <h1>Error: {error.message}</h1>
   } else if (!isLoaded) {
-    return <h1>Loading</h1>
+    return <Loading />
   }
   return (
     <div id='app'>
@@ -56,6 +59,7 @@ const App = () => {
           </Router>
         </main>
       </div>
+      <Themer />
     </div>
   )
 }

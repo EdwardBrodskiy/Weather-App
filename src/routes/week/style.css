@@ -1,13 +1,19 @@
 .week {
   font-size: 2rem;
+  overflow-y: auto;
+  height: 330px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .week ul {
   list-style-type: none;
-  
+
   padding: 0;
 }
 
 .week hr {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--text-color);
 }

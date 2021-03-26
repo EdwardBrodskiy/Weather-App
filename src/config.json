@@ -4,7 +4,7 @@
     "appId": "f3d0541df7d71acb69f6716e4de3bcc2"
   },
   "One_Call": {
-    "apiURL": "url here",
-    "appId": "app ID here"
+    "apiURL": "https://api.openweathermap.org/data/2.5/onecall?",
+    "appId": "d8c76d50d6e8c6810e649061776d3903"
   }
 }

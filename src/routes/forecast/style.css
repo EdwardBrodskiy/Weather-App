@@ -1,5 +1,11 @@
 .forecast {
   font-size: 2rem;
+  overflow-y: auto;
+  height: 330px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .forecast ul {
@@ -9,5 +15,5 @@
 }
 
 .forecast hr {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--text-color);
 }
