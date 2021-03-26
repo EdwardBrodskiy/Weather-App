@@ -6,7 +6,6 @@ import { Wind } from './components/wind'
 
 const MoreInfo = (props) => {
   const current = props.data.list[0]
-  console.log(current)
   return (
     <div class={style.moreInfo}>
       <ul>

@@ -24,7 +24,6 @@ const App = () => {
       navigator.geolocation.getCurrentPosition(position => {
         const lat = position.coords.latitude
         const lon = position.coords.longitude
-        console.log(`lon ${lon} lat ${lat}`)
         get_weather(lat, lon)
           .then(result => {
             setIsLoaded(true)

@@ -10,7 +10,6 @@ export const WeatherInfo = ({ data }) => {
 
   const current_state = current.weather[0].description
   const icon_class = convert_to_icon(current_state, data.city.sunrise, data.city.sunset)
-  console.log(icon_class)
   return (
     <div class={style.weatherInfo}>
       <h2>{data.city.name.toUpperCase()}</h2>

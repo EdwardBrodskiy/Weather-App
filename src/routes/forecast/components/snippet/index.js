@@ -4,15 +4,14 @@ import capitalize from 'capitalize'
 import style from './style.css'
 import { convert_to_icon } from '../../../../utils'
 
-export const Snippet = ({ time, description, state, temp }) => {
+export const Snippet = ({ time, description, temp, sunrise, sunset }) => {
 
-  const current_state = current.weather[0].description
-  const icon_class = convert_to_icon(current_state, data.city.sunrise, data.city.sunset)
+  const icon_class = convert_to_icon(description, sunrise, sunset, time)
 
   return (
     <div class={style.snippet}>
       <div class={style.text}>
-        <p class={style.time}>{temp}°C - {Moment(time).format('LT')}</p>
+        <p class={style.time}>{temp}°C - {Moment(time * 1000).format('LT')}</p>
         <p>{capitalize(description)}</p>
       </div>
       <i class={`wi ${icon_class}`} />
