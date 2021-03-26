@@ -14,6 +14,7 @@ export const WeatherInfo = ({ data }) => {
       <h1>
         <i class={`wi ${icon_mapping[current_state]}`} /> {current_temp}°C
       </h1>
+
     </div>
   )
 }
