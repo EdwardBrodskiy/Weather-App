@@ -15,7 +15,7 @@ export const Wind = ({ direction, speed }) => {
         </p>
       </div>
 
-      <i class={`wi wi-wind towards-${direction}-deg`} />
+      <i class={`wi wi-wind from-${direction}-deg`} />
     </div>
   )
 }
